@@ -43,16 +43,21 @@ const Documents = () => {
             </p>
             
             <div className="flex flex-col gap-3 w-full max-w-[200px] relative z-10">
-              <button disabled className="flex items-center justify-center gap-2 px-5 py-3 bg-white/5 text-gray-500 font-medium rounded-xl border border-white/5 cursor-not-allowed">
+              <a 
+                href="/resume/Samiya_Siddiqua_Resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-5 py-3 bg-white/10 text-white font-medium rounded-xl border border-white/20 hover:bg-white/20 transition-all"
+              >
                 <FileText size={16} /> View Resume
-              </button>
-              <button disabled className="flex items-center justify-center gap-2 px-5 py-3 bg-blue-900/20 text-blue-500/50 font-medium rounded-xl border border-blue-500/10 cursor-not-allowed">
+              </a>
+              <a 
+                href="/resume/Samiya_Siddiqua_Resume.pdf" 
+                download="Samiya_Siddiqua_Resume.pdf"
+                className="flex items-center justify-center gap-2 px-5 py-3 bg-blue-600/20 text-blue-400 font-medium rounded-xl border border-blue-500/30 hover:bg-blue-600/40 transition-all"
+              >
                 <FileDown size={16} /> Download PDF
-              </button>
-            </div>
-
-            <div className="absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1 bg-black/50 border border-white/10 rounded-full text-xs font-medium text-gray-500">
-              <Lock size={12} /> Coming Soon
+              </a>
             </div>
           </motion.div>
 
