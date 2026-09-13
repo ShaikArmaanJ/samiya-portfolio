@@ -39,8 +39,8 @@ const Projects = () => {
                   </div>
                   <div className="flex gap-3 text-gray-500">
                     {/* Disabled visual states for placeholders */}
-                    <Github size={22} className="opacity-40 cursor-not-allowed" title="GitHub - Coming Soon" />
-                    <ExternalLink size={22} className="opacity-40 cursor-not-allowed" title="Demo - Coming Soon" />
+                   <Github size={22} className="opacity-40 cursor-not-allowed" />
+<ExternalLink size={22} className="opacity-40 cursor-not-allowed" />
                   </div>
                 </div>
                 
