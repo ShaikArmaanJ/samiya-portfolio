@@ -7,17 +7,17 @@ const Documents = () => {
     { 
       title: "Take It Smart - Internship Certificate", 
       status: "Available",
-      fileName: "/take it smart internship certificate.pdf" 
+      fileName: "/takeitsmart.pdf" 
     },
     { 
       title: "White & Box - Internship Certificate", 
       status: "Available",
-      fileName: "/white and box internship certificate.pdf" 
+      fileName: "/whitebox.pdf" 
     },
     { 
       title: "TN Hackathon Participation Certificate", 
       status: "Available",
-      fileName: "/tnwise hackathon certificate (1).pdf"
+      fileName: "/tnwise.pdf"
     }
   ];
 
