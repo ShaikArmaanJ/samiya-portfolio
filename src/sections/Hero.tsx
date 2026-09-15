@@ -38,7 +38,7 @@ const Hero = () => {
           <a href="/resume/Samiya_Siddiqua_Resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-7 py-3 bg-white/5 text-white font-medium rounded-full border border-white/10 hover:bg-white/10 transition-colors backdrop-blur-sm">
             <FileText size={18} /> View Resume
           </a>
-          <a href="mailto:samiyasiddiqua17@gmail.com" className="flex items-center gap-2 px-7 py-3 bg-transparent text-gray-400 font-medium rounded-full hover:text-white transition-colors">
+          <a href="mailto:samiyasiddiqua317@gmail.com" className="flex items-center gap-2 px-7 py-3 bg-transparent text-gray-400 font-medium rounded-full hover:text-white transition-colors">
             <Mail size={18} /> Contact Me
           </a>
         </motion.div>
