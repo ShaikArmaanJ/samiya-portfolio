@@ -4,7 +4,7 @@ import { VERIFIED_DATA } from '../data/portfolioData';
 
 const Projects = () => {
   return (
-    <section className="relative py-24 bg-black px-6 border-t border-white/5">
+    <section id="projects" className="relative py-24 bg-black px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.div
