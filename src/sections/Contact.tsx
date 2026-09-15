@@ -41,13 +41,13 @@ const Contact = () => {
 
             <div className="space-y-4">
               {/* Email Link */}
-              <a href={`mailto:${VERIFIED_DATA.personal.email}`} className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-blue-500/50 transition-all group">
+              <a href="mailto:samiyasiddiqua317@gmail.com" className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-blue-500/50 transition-all group">
                 <div className="p-3 bg-blue-500/10 text-blue-400 rounded-lg group-hover:bg-blue-500/20 transition-colors">
                   <Mail size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 mb-0.5">Email</p>
-                  <p className="text-gray-200 font-medium">{VERIFIED_DATA.personal.email}</p>
+                  <p className="text-gray-200 font-medium">samiyasiddiqua317@gmail.com</p>
                 </div>
               </a>
 
