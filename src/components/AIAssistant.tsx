@@ -9,7 +9,7 @@ const AIAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'bot', text: "Hi! I'm Samiya's portfolio assistant. You can ask me about her skills, projects, hackathons, or education." }
+    { role: 'bot', text: "Hi! I'm Samiya's portfolio assistant. You can ask me about her skills, projects, internships, or education." }
   ]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -19,7 +19,6 @@ const AIAssistant = () => {
   }, [messages]);
 
   // Strict routing to prevent hallucinations.
-  // NOTE: To upgrade to a real LLM later, replace this with a fetch() call to a Vercel /api/chat route.
   const generateResponse = (query: string): string => {
     const q = query.toLowerCase();
     
@@ -34,7 +33,8 @@ const AIAssistant = () => {
       return `She has participated in: ${VERIFIED_DATA.hackathons.join(' and ')}.`;
     }
     if (q.includes('internship') || q.includes('work') || q.includes('experience')) {
-      return `She interned at ${VERIFIED_DATA.internship.company}.`;
+      const internshipList = VERIFIED_DATA.internships.map(i => `${i.role} at ${i.company}`).join(' and ');
+      return `She has completed internships as: ${internshipList}.`;
     }
     if (q.includes('education') || q.includes('cgpa') || q.includes('study') || q.includes('degree')) {
       return `She is currently in her ${VERIFIED_DATA.education.year} of ${VERIFIED_DATA.education.degree}, maintaining a CGPA of ${VERIFIED_DATA.education.cgpa}.`;
