@@ -93,7 +93,7 @@ const Milestones = () => {
             <div className="p-6 md:p-8 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm hover:border-yellow-500/30 hover:bg-white/[0.07] transition-all duration-300">
               <h3 className="text-xl font-bold text-white mb-5">Achievements</h3>
               <ul className="space-y-4">
-                {VERIFIED_DATA.achievements.mdap ? null : VERIFIED_DATA.achievements.map((achievement) => (
+                {VERIFIED_DATA.achievements.map((achievement) => (
                   <li key={achievement} className="flex items-start gap-3 text-gray-300">
                     <div className="mt-1.5 h-1.5 w-1.5 rounded-full bg-yellow-500/50 shadow-[0_0_8px_rgba(250,204,21,0.6)] flex-shrink-0" />
                     <span className="leading-snug">{achievement}</span>
